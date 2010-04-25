@@ -61,6 +61,7 @@ Rake::RDocTask.new do |rd|
   rd.main = "README"
   rd.rdoc_files.include("README", "lib/**/*.rb")
   rd.rdoc_dir = "rdoc"
+  rd.options << "-c utf8"
 end
 
 desc 'Clear out RDoc and generated packages'

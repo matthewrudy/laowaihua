@@ -11,6 +11,8 @@ module LaoWaiHua
    打 翻 醋 ， 醋 湿 布 
   )
   
+  # return a string of *length* taken from the provided tongue twister
+  # defaults to the full length of the text
   def self.generate(length=WORDS.length)
     words = []
 	  while words.length < length

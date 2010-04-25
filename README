@@ -1,5 +1,5 @@
 LaoWaiHua
-=========
+======
 
 A "Lorem Ipsum" generator for Chinese (simplified)
 
@@ -24,8 +24,7 @@ taken from the tongue-twister
   da fan cu, cu shi bu.
 
 Example
-=======
-
+======
   >> require 'laowaihua'
   
   >> LaoWaiHua(25)
