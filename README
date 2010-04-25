@@ -1,0 +1,13 @@
+LaoWaiHua
+=========
+
+A "Lorem Ipsum" generator for Chinese (simplified)
+
+Example
+=======
+
+  >> require 'laowaihua'
+  
+  >> LaoWaiHua(25)
+  => "一位爷爷他姓顾，上街打醋又买布。买了布，打了醋，回"
+  
