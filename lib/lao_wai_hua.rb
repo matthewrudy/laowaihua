@@ -24,3 +24,7 @@ end
 def LaoWaiHua(*args)
   LaoWaiHua.generate(*args)
 end
+
+if defined?(Rails)
+  require 'lao_wai_hua/railtie'
+end
