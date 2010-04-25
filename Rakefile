@@ -15,7 +15,7 @@ spec = Gem::Specification.new do |s|
 
   # Change these as appropriate
   s.name              = "laowaihua"
-  s.version           = "0.1.0"
+  s.version           = "0.1.1"
   s.summary           = "a Lorem Ipsum generator for Chinese"
   s.author            = "Matthew Rudy"
   s.email             = "matthewrudyjacobs@gmail.com"
