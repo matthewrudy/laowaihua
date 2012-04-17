@@ -1,5 +1,6 @@
+# encoding: UTF-8
 module LaoWaiHua
-  
+
   WORDS = %w(
    一 位 爷 爷 他 姓 顾 ，
    上 街 打 醋 又 买 布 。
@@ -8,15 +9,15 @@ module LaoWaiHua
    放 下 布 ， 搁 下 醋 ，
    上 前 去 追 鹰 和 兔 ，
    飞 了 鹰 ， 跑 了 兔 。
-   打 翻 醋 ， 醋 湿 布 
+   打 翻 醋 ， 醋 湿 布
   )
-  
+
   PUNCTUATION = %w( ，  。 )
-  
+
   WORDS_WITHOUT_PUNCTUATION = WORDS.select{|word| !PUNCTUATION.include?(word)}
-  
+
   class << self
-  
+
     # return a string of *length* taken from the provided tongue twister
     # defaults to the full length of the text
     def generate(length=WORDS.length)
@@ -31,12 +32,12 @@ module LaoWaiHua
     def random_word()
   	  WORDS_WITHOUT_PUNCTUATION[rand(WORDS_WITHOUT_PUNCTUATION.length)]
     end
-  
+
     # return a string or random words of the provided *length*
     def random(length)
   	  words = []
       next_punctuation = nil
-      
+
     	1.upto(length) do
     	  next_punctuation ||= rand(3)+2
     	  if next_punctuation == 0
@@ -49,9 +50,9 @@ module LaoWaiHua
     	end
     	words.join("")
     end
-    
+
     protected
-    
+
     def random_punctuation()
       PUNCTUATION[rand(PUNCTUATION.length)]
     end

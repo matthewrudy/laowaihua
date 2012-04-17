@@ -15,7 +15,7 @@ spec = Gem::Specification.new do |s|
 
   # Change these as appropriate
   s.name              = "laowaihua"
-  s.version           = "0.1.1"
+  s.version           = "0.2.0"
   s.summary           = "a Lorem Ipsum generator for Chinese"
   s.author            = "Matthew Rudy"
   s.email             = "matthewrudyjacobs@gmail.com"
@@ -42,7 +42,7 @@ end
 # be automatically building a gem for this project. If you're not
 # using GitHub, edit as appropriate.
 #
-# To publish your gem online, install the 'gemcutter' gem; Read more 
+# To publish your gem online, install the 'gemcutter' gem; Read more
 # about that here: http://gemcutter.org/pages/gem_docs
 Rake::GemPackageTask.new(spec) do |pkg|
   pkg.gem_spec = spec
